@@ -5,13 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Uploader</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .image-tags {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .gallery-image {
+            width: 300px; 
+            height: 200px; 
+            object-fit: auto; 
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1><i>Welcome to My Photo Gallery</i></h1> 
     </header>
     <main>
-        <img src="20200824_200759.jpg" alt="beachSunSet">
+        <div class="image-tags">
+            <a href="new_window.html" class="image-link">
+                <img src="SantoriniWindmill.jpg" alt="Santorini" class="gallery-image">
+                <div class="image-overlay">
+                    <h2>Europe</h2>
+                    <!-- Content for Europe tab -->
+                </div>
+            </a>
+            <a href="new_window.html" class="image-link">
+                <img src="20200824_200759.jpg" alt="beachSunSet" class="gallery-image">
+                <div class="image-overlay">
+                    <h2>Continental Americas</h2>
+                    <!-- Content for Continental Americas tab -->
+                </div>
+            </a>
+            <a href="new_window.html" class="image-link">
+                <img src="20210418_071438.jpg" alt="BeachHawaii" class="gallery-image">
+                <div class="image-overlay">
+                    <h2>Hawaii</h2>
+                    <!-- Content for Hawaii tab -->
+                </div>
+            </a>
+            <a href="new_window.html" class="image-link">
+                <img src="SunsetMonaLisaCabo.jpg" alt="Your Alt Text" class="gallery-image">
+                <div class="image-overlay">
+                    <h2>Mexico</h2>
+                    <!-- Content for Fourth Tab -->
+                </div>
+            </a>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 EricAdams</p>
