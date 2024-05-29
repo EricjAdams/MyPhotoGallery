@@ -6,15 +6,71 @@
     <title>Photo Uploader</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        body {
+            font-family: 'Courier New', Courier, monospace, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #463f95;
+            background: url('greenlandiceflow.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgba(240, 240, 240, 0.9);
+            color: #ba3b3b;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
         .image-tags {
             display: flex;
             justify-content: space-between;
         }
 
+        footer {
+            background-color: #444;
+            color: #36813d;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
         .gallery-image {
-            width: 300px; 
-            height: 200px; 
-            object-fit: auto; 
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .image-link {
+            position: relative;
+            z-index: 1;
+            text-decoration: none;
+        }
+
+        .image-overlay:hover {
+            background-color: rgba(255, 255, 255, 0.9);
         }
     </style>
 </head>
@@ -28,28 +84,24 @@
                 <img src="SantoriniWindmill.jpg" alt="Santorini" class="gallery-image">
                 <div class="image-overlay">
                     <h2>Europe</h2>
-                    <!-- Content for Europe tab -->
                 </div>
             </a>
             <a href="new_window.html" class="image-link">
                 <img src="20200824_200759.jpg" alt="beachSunSet" class="gallery-image">
                 <div class="image-overlay">
                     <h2>Continental Americas</h2>
-                    <!-- Content for Continental Americas tab -->
                 </div>
             </a>
             <a href="new_window.html" class="image-link">
                 <img src="20210418_071438.jpg" alt="BeachHawaii" class="gallery-image">
                 <div class="image-overlay">
                     <h2>Hawaii</h2>
-                    <!-- Content for Hawaii tab -->
                 </div>
             </a>
             <a href="new_window.html" class="image-link">
                 <img src="SunsetMonaLisaCabo.jpg" alt="Your Alt Text" class="gallery-image">
                 <div class="image-overlay">
                     <h2>Mexico</h2>
-                    <!-- Content for Fourth Tab -->
                 </div>
             </a>
         </div>
