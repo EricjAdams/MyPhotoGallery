@@ -4,25 +4,20 @@ body {
     padding: 0;
     color: #463f95;
 }
-
 header {
-    background-color: rgb(240, 240, 240);
+    background-color: rgba(240, 240, 240, 0.9);
     color: #ba3b3b;
     padding: 1rem;
     text-align: center;
 }
-
 main {
     padding: 2rem;
     text-align: center;
 }
-
-main .image-tags {
+.image-tags {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
 }
-
 footer {
     background-color: #444;
     color: #36813d;
@@ -32,15 +27,14 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
 .gallery-image {
-    max-width: 100%;
-    height: auto;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
     display: block;
     margin: 0 auto;
     position: relative;
 }
-
 .image-overlay {
     position: absolute;
     top: 10px;
@@ -52,13 +46,26 @@ footer {
     cursor: pointer;
     text-align: center;
 }
-
 .image-link {
     position: relative;
     z-index: 1;
     text-decoration: none;
 }
-
 .image-overlay:hover {
     background-color: rgba(255, 255, 255, 0.9);
+}
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 10;
+}
+.home-button:hover {
+    background-color: #f0f0f0;
 }
