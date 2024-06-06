@@ -5,74 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corfu Gallery</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background: url('CorfuTown.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: transparent; 
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; 
-        }
-        .gradient-text {
-            background: linear-gradient(to right, blue, white); 
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        header {
-            background-color: #333; 
-            padding: 10px 0; 
-        }
-        main, footer {
-            color: transparent; 
-        }
-        main .gradient-text, footer .gradient-text {
-            background: linear-gradient(to right, blue, white); 
-            -webkit-background-clip: text;
-        }
-        footer {
-            text-align: center; 
-            margin-top: auto; 
-            padding: 20px 0; 
-        }
-        .home-button {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 5px 10px;
-            background-color: rgba(255, 255, 255, 0.5);
-            color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .home-button:hover .dropdown-content {
-            display: block;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 100px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            top: 30px;
-            left: 0;
-        }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-        .home-button:hover .dropdown-content {
-            display: block;
-        }
-    </style>
 </head>
-<body>
+<body class="corfu">
+     <!-- Home Button Dropdown -->
     <div class="home-button">Home
         <div class="dropdown-content">
             <a href="index.html">Home</a>
@@ -82,15 +17,20 @@
             <a href="Sorento.html">Sorento</a>
         </div>
     </div>
+    <!-- Header -->
     <header>
-        <h1><i class="gradient-text">Corfu Photo Gallery</i></h1> 
+        <h1><i class="gradient-text">Corfu Photo Gallery</i></h1>
     </header>
     <main>
-        <h2 class="gradient-text">Corfu</h2>
-        <p class="gradient-text">Welcome to my photo gallery of Corfu.</p>
+        <div class="text-box">
+            <h2 class="gradient-text">Corfu</h2>
+            <p class="gradient-text">Welcome to my photo gallery of Corfu.</p>
+            <p><a href="https://weather.com/weather/today/l/39.62,19.92?par=google" target="_blank" style="color: #090003; text-decoration: underline;">Check Current Weather in CorfuTown</a></p>
+            <p><a href="#" style="color: #6beaa6; text-decoration: underline;">Check Current Sea Temperatures in Corfu (Coming Soon)</a></p> <!-- Placeholder link added here -->
+        </div>
     </main>
     <footer>
-        <p class="gradient-text">&copy; 2024 EricAdams</p>
+        <p class="gradient-text" style="color: #00ffff;">&copy; 2024 Eric Adams</p>
     </footer>
 </body>
 </html>

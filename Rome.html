@@ -5,70 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rome Gallery</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background: url('colosseum.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: transparent; 
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; 
-        }
-        .italian-flag-text {
-            background: linear-gradient(to right, green, white, red);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        header {
-            background-color: #3d3b3b; 
-        }
-        footer {
-            text-align: center; 
-            margin-top: auto; 
-            background-color: #3d3b3b; 
-            padding: 20px 0; 
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .home-button {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 5px 10px;
-            background-color: rgba(255, 255, 255, 0.5);
-            color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .home-button:hover .dropdown-content {
-            display: block;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 100px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            top: 30px;
-            left: 0;
-        }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-        .home-button:hover .dropdown-content {
-            display: block;
-        }
-    </style>
 </head>
-<body>
+<body style="background: url('colosseum.jpg') no-repeat right center fixed; background-size: cover;">
+     <!-- Home Button Dropdown -->
     <div class="home-button">Home
         <div class="dropdown-content">
             <a href="index.html">Home</a>
@@ -78,15 +17,20 @@
             <a href="Sorento.html">Sorento</a>
         </div>
     </div>
+    <!-- Header -->
     <header>
         <h1><i class="italian-flag-text">Rome Photo Gallery</i></h1>
     </header>
     <main>
-        <h2 class="italian-flag-text">Rome</h2>
-        <p class="italian-flag-text">Welcome to my photo gallery of Rome.</p>
+        <div class="text-box">
+            <h2 class="italian-flag-text">Rome</h2>
+            <p class="italian-flag-text">Welcome to my photo gallery of Rome.</p>
+            <!-- External link to weather website -->
+            <p><a href="https://weather.com/weather/today/l/ITXX0067:1:IT" target="_blank" style="color: #fff; text-decoration: underline;">Check Current Weather in Rome</a></p>
+        </div>
     </main>
     <footer>
-        <p class="italian-flag-text">&copy; 2024 EricAdams</p>
+        <p class="italian-flag-text">&copy; 2024 Eric Adams</p>
     </footer>
 </body>
 </html>

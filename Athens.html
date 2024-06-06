@@ -5,95 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Athens Gallery</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background: url('acropolis.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff; 
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; 
-        }
-        .gradient-text {
-            background: linear-gradient(to right, blue, white, blue); 
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        header {
-            background-color: #3d3b3b; 
-            padding: 10px 0; 
-            border-bottom: 2px solid #3d3b3b; 
-        }
-        main .gradient-text {
-            background: linear-gradient(to right, #000080, white, #000080); 
-            -webkit-background-clip: text;
-        }
-        footer {
-            text-align: center; 
-            margin-top: auto; 
-            background-color: #3d3b3b; 
-            padding: 20px 0; 
-            position: fixed; 
-            bottom: 0; 
-            width: 100%; 
-            border-top: 2px solid #3d3b3b; 
-        }
-        .home-button {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 5px 10px;
-            background-color: rgba(255, 255, 255, 0.5);
-            color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .home-button:hover .dropdown-content {
-            display: block;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 100px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            top: 30px;
-            left: 0;
-        }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-        .home-button:hover .dropdown-content {
-            display: block;
-        }
-    </style>
 </head>
-<body>
-    <div class="home-button">Home
+<body class="athens">
+     <!-- Home Button Dropdown -->
+    <div class="home-button athens">Home
         <div class="dropdown-content">
             <a href="index.html">Home</a>
+            <a href="Athens.html">Athens</a>
             <a href="Corfu.html">Corfu</a>
             <a href="Rome.html">Rome</a>
             <a href="Santorini.html">Santorini</a>
             <a href="Sorento.html">Sorento</a>
         </div>
     </div>
-    <header>
-        <h1><i class="gradient-text">Athens Photo Gallery</i></h1> 
+    <!-- Header -->
+    <header class="athens">
+        <h1 class="greek-flag-text">Athens Photo Gallery</h1>
     </header>
-    <main>
-        <h2 class="gradient-text">Athens</h2>
-        <p class="gradient-text">Welcome to my photo gallery of Athens.</p>
-    </main>
+    <div class="text-box">
+        <h2>Athens</h2>
+        <p>Welcome to my photo gallery of Athens.</p>
+        <!-- External link to weather website -->
+        <p><a href="https://weather.com/weather/today/l/GRXX0004:1:GR" target="_blank" style="color: #fff; text-decoration: underline;">Check Current Weather in Athens</a></p>
+    </div>
+    <div class="spacer"></div> <!-- Adds space between images -->
+    <div class="image-link athens">
+        <a href="#lightbox1">
+            <img src="image/cryingMarbleFace.jpg" alt="Crying Marble Face" class="gallery-image athens">
+        </a>
+    </div>
+    <div class="image-link athens">
+        <a href="#lightbox2">
+            <img src="image/plateia.jpg" alt="Plateia" class="gallery-image athens">
+        </a>
+    </div>
+    <div class="image-link athens">
+        <a href="#lightbox3">
+            <img src="image/AthenianMotorWay.jpg" alt="Athenian Motor Way" class="gallery-image athens">
+        </a>
+    </div>
+    <!-- Add more images as needed -->
+
+    <!-- Lightbox Markup -->
+    <div class="lightbox" id="lightbox1">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="image/cryingMarbleFace.jpg" alt="Large Image">
+    </div>
+    <div class="lightbox" id="lightbox2">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="image/plateia.jpg" alt="Large Image">
+    </div>
+    <div class="lightbox" id="lightbox3">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="image/AthenianMotorWay.jpg" alt="Large Image">
+    </div>
+
     <footer>
-        <p class="gradient-text">&copy; 2024 EricAdams</p>
+        <p class="greek-flag-text">&copy; 2024 Eric Adams</p>
     </footer>
 </body>
 </html>

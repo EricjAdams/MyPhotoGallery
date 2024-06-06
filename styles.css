@@ -1,8 +1,11 @@
+/* Main styles */
 body {
     font-family: 'Courier New', Courier, monospace, sans-serif;
     margin: 0;
     padding: 0;
     color: #463f95;
+    background: url('IceFlow.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 header {
@@ -10,6 +13,15 @@ header {
     color: #ba3b3b;
     padding: 1rem;
     text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    background: linear-gradient(to right, #ADD8E6, #0000FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 20px 0;
 }
 
 main {
@@ -84,4 +96,512 @@ main {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* Athens-specific styles */
+body.athens {
+    background: url('acropolis.jpg') no-repeat right center fixed;
+    background-size: cover;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 150px; /* Add padding to the bottom of the body */
+}
+
+.greek-flag-text {
+    background: linear-gradient(to right, #0000ff, #ffffff, #0000ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header.athens {
+    background-color: #3d3b3b;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    background-color: #3d3b3b;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.home-button.athens {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1; /* Added z-index to ensure it's on top of other content */
+}
+
+.home-button:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 30px;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.text-box {
+    background-color: rgba(128, 128, 128, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 20px auto 20px; /* Added margin to the bottom of the text box */
+    text-align: center; /* centers the text in the text box*/
+}
+
+.text-box h2,
+.text-box p {
+    color: #3ae16a; /* Adjusted color of text for h2 and paragraph */
+}
+
+.spacer {
+    height: 20px; /* Add height to create space between textbox and photos */
+}
+
+.image-link.athens {
+    display: flex;
+    justify-content: center;
+    text-align: center; /* Center the images */
+    margin: 0 auto 20px; /* Add margin between images */
+    cursor: pointer; /* Add cursor pointer */
+    position: relative;
+}
+
+.gallery-image.athens {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 10px solid #00f;
+    border-image: linear-gradient(to right, #00f, #ffff); /* Gradient border */
+    border-image-slice: 1; /* Ensures the entire border is a gradient */
+}
+
+.image-link:hover .gallery-image.athens {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox:target {
+    display: flex; /* Show lightbox when URL has a target */
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.lightbox-close:hover {
+    color: #ccc;
+}
+
+/* Corfu-specific styles */
+body.corfu {
+    background: url('CorfuTown.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header.corfu {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center
+}
+
+main.corfu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    margin-top: -35vh;
+}
+
+.footer.corfu {
+    text-align: center;
+    margin-top: auto;
+    padding: 20px 0;
+    background-color: #333;
+}
+
+.home-button.corfu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home-button:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content.corfu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 30px;
+    left: 0;
+}
+
+.dropdown-content.corfu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content.corfu a:hover {
+    background-color: #f1f1f1;
+}
+
+.gradient-text.corfu {
+    background: linear-gradient(to right, blue, rgb(29, 12, 73));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.text-box.corfu {
+    background-color: rgba(203, 225, 238, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    width: 25.5%;
+    margin: 0 auto;
+    height: 110px;
+}
+
+/* Rome specific styles */
+body.rome {
+    background: url('colosseum.jpg') no-repeat right center fixed !important; /* Added !important */
+    background-size: cover !important; /* Added !important */
+    color: #463f95;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.italian-flag-text {
+    background: linear-gradient(to right, #008000, #ffffff, #ff0000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header.rome {
+    background-color: #3d3b3b;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer.rome {
+    text-align: center;
+    margin-top: auto;
+    background-color: #3d3b3b;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.home-button.rome {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.home-button:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content.rome {
+    display: none;
+    position: absolute;
+    background-color: #10cdbd50;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(118, 34, 34, 0.2);
+    z-index: 1;
+    top: 30px;
+    left: 0;
+}
+.dropdown-content.rome a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content.rome a:hover {
+    background-color: #10cdbd50;
+}
+
+main.rome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 25%;
+}
+.text-box.rome {
+    background-color: #10cdbd50;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 0 auto;
+}
+main .italian-flag-text.rome {
+    color: #3ae16a;
+}
+
+/* Santorini specific styles */
+body.santorini {
+    background: url('SantoriniWindmill.jpg') no-repeat right center fixed !important;
+    background-size: cover !important;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.gradient-text.santorini {
+    background: linear-gradient(to right, #0000ff, #ffffff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header.santorini {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer.santorini {
+    text-align: center;
+    margin-top: auto;
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.home-button.santorini {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home-button.santorini:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content.santorini {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 30px;
+    left: 0;
+}
+
+.dropdown-content.santorini a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content.santorini a:hover {
+    background-color: #f1f1f1;
+}
+
+main.santorini {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    margin-top: -24vh; 
+}
+
+.text-box.santorini {
+    background-color: rgba(128, 128, 128, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 29%;
+    margin: 0 auto;
+}
+
+.main.santorini .gradient-text {
+    color: #292381; 
+}
+
+footer.santorini p.gradient-text {
+    color: rgba(165, 234, 222, 0.957);
+}
+
+/* Sorento specific styles */
+body.sorrento {
+    background: url('SorentoPier.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header.sorrento {
+    background-color: #3d3b3b;
+    padding: 10px 0;
+}
+
+main.sorrento,
+footer.sorrento {
+    color: #fff;
+}
+
+main.sorrento .gradient-text,
+footer.sorrento .gradient-text {
+    background: linear-gradient(to right, green, white, red);
+    -webkit-background-clip: text;
+}
+
+.text-box {
+    background-color: rgba(4, 12, 77, 0.217);
+    padding: 20px;
+    border-radius: 10px;
+    width: 25.5%;
+    margin: 0 auto;
+    margin-top: 20px; 
+}
+
+footer.sorrento {
+    text-align: center;
+    margin-top: auto;
+    background-color: #3d3b3b;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #3d3b3b;
+    border-bottom: 2px solid #3d3b3b;
+}
+
+.home-button.sorrento {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home-button.sorrento:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content.sorrento {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 30px;
+    left: 0;
+}
+
+.dropdown-content.sorrento a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content.sorrento a:hover {
+    background-color: #f1f1f1;
+}
+
+.weather-link {
+    color: #00ffff;
+    text-decoration: underline;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #008000, #ffffff, #ff0000);
+    -webkit-background-clip: text;
+    color: transparent;
 }
