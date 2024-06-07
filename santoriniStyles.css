@@ -1,7 +1,7 @@
 body.santorini {
     background: url('image/santoriniWindmill.jpg') no-repeat right center fixed;
-    background-size: cover !important;
-    color: #fff; /* Set default text color */
+    background-size: cover;
+    color: transparent; /* Set default text color */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
