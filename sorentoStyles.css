@@ -1,6 +1,6 @@
 /* Sorento-specific styles */
 body.sorrento {
-    background: url('SorentoPier.jpg') no-repeat center center fixed;
+    background: url('image/sorentoPier.jpg') no-repeat right center fixed;
     background-size: cover;
     color: #fff;
     display: flex;

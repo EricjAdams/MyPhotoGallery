@@ -1,5 +1,5 @@
 body.santorini {
-    background: url('santoriniWindmill.jpg') no-repeat right center fixed !important;
+    background: url('image/santoriniWindmill.jpg') no-repeat right center fixed;
     background-size: cover !important;
     color: #fff; /* Set default text color */
     display: flex;
