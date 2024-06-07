@@ -1,0 +1,119 @@
+/* Sorento-specific styles */
+body.sorrento {
+    background: url('SorentoPier.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 150px; /* Adds padding to the bottom of the body */
+}
+
+header.sorrento {
+    background-color: #3d3b3b;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav-list a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+main.sorrento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    margin-top: -24vh; /* Adjusts margin for Santorini page */
+}
+
+footer.sorrento {
+    text-align: center;
+    margin-top: auto;
+    background-color: #3d3b3b;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #3d3b3b;
+    border-bottom: 2px solid #3d3b3b;
+}
+
+.home-button.sorrento {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home-button.sorrento:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content.sorrento {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 30px;
+    left: 0;
+}
+
+.dropdown-content.sorrento a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content.sorrento a:hover {
+    background-color: #f1f1f1;
+}
+
+.text-box {
+    background: linear-gradient(to right, #171c4354, #979bb549 );/* Adjusts gradient */
+    padding: 10px;
+    border-radius: 10px;
+    width: 25%; /* Adjusts width */
+    margin: 50px auto; /* Adjusts margin */
+    text-align: center; /* Center align text */;
+}
+
+.gradient-text.sorrento {
+    background: linear-gradient(to right, #008000, #ffffff, #ff0000);
+    -webkit-background-clip: text;
+    color: transparent;
+}

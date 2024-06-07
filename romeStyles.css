@@ -1,0 +1,98 @@
+body.rome {
+    background: url('colosseum.jpg') no-repeat right center fixed;
+    background-size: cover;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 150px; /* Adds padding to the bottom of the body */
+}
+
+header.rome {
+    background-color: #3d3b3b;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+main.rome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+footer.rome {
+    text-align: center;
+    margin-top: auto;
+    padding: 20px 0;
+    background-color: #3d3b3b;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.italian-flag-text {
+    background: linear-gradient(to right, #008000, #ffffff, #ff0000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.text-box.rome {
+    background-color: rgba(169, 187, 198, 0.63);
+    padding: 20px;
+    border-radius: 10px;
+    width: 20%;
+    margin: -200px auto 0; /* modifies vertical positioning of textbox */
+    text-align: center; /* centers the text in the text box */
+}
+
+.text-box.rome h2,
+.text-box.rome p {
+    color: #090003; /* Adjusted color of text for h2 and paragraph */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .text-box.rome {
+        width: 80%;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+    .nav-list li {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,135 @@
+body.athens {
+    background: url('acropolis.jpg') no-repeat right center fixed;
+    background-size: cover;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 150px; /* Add padding to the bottom of the body */
+}
+
+.greek-flag-text {
+    background: linear-gradient(to right, #0000ff, #ffffff, #0000ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header.athens {
+    background-color: #3d3b3b;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    background-color: #3d3b3b;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+.text-box {
+    background-color: rgba(128, 128, 128, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 20px auto 20px; /* Adds margin to the bottom of the text box */
+    text-align: center; /* centers the text in the text box*/
+}
+
+.text-box h2,
+.text-box p {
+    color: #3ae16a; /* Adjusted color of text for h2 and paragraph */
+}
+
+.spacer {
+    height: 20px; /* Adds height to create space between textbox and photos */
+}
+
+.image-link.athens {
+    display: flex;
+    justify-content: center;
+    text-align: center; /* Centers the images */
+    margin: 0 auto 20px; /* Adds margin between images */
+    cursor: pointer; /* Adds cursor pointer */
+    position: relative;
+}
+
+.gallery-image.athens {
+    width: 100px; /* Adjusts size as needed */
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    border: 10px solid #00f;
+    border-image: linear-gradient(to right, #00f, #ffff); /* Gradient border */
+    border-image-slice: 1; /* Ensures the entire border is a gradient */
+}
+
+.image-link:hover .gallery-image.athens {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox:target {
+    display: flex; /* Show lightbox when URL has a target */
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.lightbox-close:hover {
+    color: #ccc;
+}

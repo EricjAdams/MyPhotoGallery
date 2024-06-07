@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rome Gallery</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="romeStyles.css"> <!-- page specific CSS file -->
 </head>
-<body style="background: url('colosseum.jpg') no-repeat right center fixed; background-size: cover;">
-     <!-- Home Button Dropdown -->
-    <div class="home-button">Home
-        <div class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="Athens.html">Athens</a>
-            <a href="Corfu.html">Corfu</a>
-            <a href="Santorini.html">Santorini</a>
-            <a href="Sorento.html">Sorento</a>
-        </div>
-    </div>
+<body class="rome">
     <!-- Header -->
-    <header>
-        <h1><i class="italian-flag-text">Rome Photo Gallery</i></h1>
+    <header class="rome">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Athens.html">Athens</a></li>
+                <li><a href="Corfu.html">Corfu</a></li>
+                <li><a href="Rome.html" class="active">Rome</a></li>
+                <li><a href="Santorini.html">Santorini</a></li>
+                <li><a href="Sorento.html">Sorento</a></li>
+            </ul>
+        </nav>
+        <h1 class="italian-flag-text">Rome Photo Gallery</h1>
     </header>
-    <main>
-        <div class="text-box">
+    <main class="rome">
+        <div class="text-box rome">
             <h2 class="italian-flag-text">Rome</h2>
             <p class="italian-flag-text">Welcome to my photo gallery of Rome.</p>
             <!-- External link to weather website -->
             <p><a href="https://weather.com/weather/today/l/ITXX0067:1:IT" target="_blank" style="color: #fff; text-decoration: underline;">Check Current Weather in Rome</a></p>
         </div>
     </main>
-    <footer>
+    <footer class="rome">
         <p class="italian-flag-text">&copy; 2024 Eric Adams</p>
     </footer>
 </body>

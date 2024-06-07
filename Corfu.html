@@ -4,33 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corfu Gallery</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="corfuStyles.css"> <!-- page specific CSS file -->
 </head>
 <body class="corfu">
-     <!-- Home Button Dropdown -->
-    <div class="home-button">Home
-        <div class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="Athens.html">Athens</a>
-            <a href="Rome.html">Rome</a>
-            <a href="Santorini.html">Santorini</a>
-            <a href="Sorento.html">Sorento</a>
-        </div>
-    </div>
     <!-- Header -->
-    <header>
-        <h1><i class="gradient-text">Corfu Photo Gallery</i></h1>
+    <header class="corfu">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Athens.html">Athens</a></li>
+                <li><a href="Corfu.html">Corfu</a></li>
+                <li><a href="Rome.html">Rome</a></li>
+                <li><a href="Santorini.html">Santorini</a></li>
+                <li><a href="Sorento.html">Sorento</a></li>
+            </ul>
+        </nav>
+        <h1 class="gradient-text corfu">Corfu Photo Gallery</h1>
     </header>
-    <main>
-        <div class="text-box">
-            <h2 class="gradient-text">Corfu</h2>
-            <p class="gradient-text">Welcome to my photo gallery of Corfu.</p>
-            <p><a href="https://weather.com/weather/today/l/39.62,19.92?par=google" target="_blank" style="color: #090003; text-decoration: underline;">Check Current Weather in CorfuTown</a></p>
-            <p><a href="#" style="color: #6beaa6; text-decoration: underline;">Check Current Sea Temperatures in Corfu (Coming Soon)</a></p> <!-- Placeholder link added here -->
+    <main class="corfu">
+        <div class="text-box corfu">
+            <h2 class="gradient-text corfu">Corfu</h2>
+            <p class="gradient-text corfu">Welcome to my photo gallery of Corfu.</p>
+            <!-- External link to weather website -->
+            <p><a href="https://weather.com/weather/today/l/39.62,19.92?par=google" target="_blank" style="color: #090003; text-decoration: underline;">Check Current Weather in Corfu Town</a></p>
+            <!--Link to sea temperature website-->
+            <p><a href="https://www.seatemperature.org/europe/greece/corfu.htm">Link to Sea Temperature</a></p>
+        </div>
+        <!-- Add your photos below the text box -->
+        <div class="photo-gallery">
+            <div class="image-link corfu">
+                <a href="#lightbox1">
+                    <img src="image/corfuRuins.jpg" alt="Corfu Photo 1" class="gallery-image corfu">
+                </a>
+            </div>
+            <div class="image-link corfu">
+                <a href="#lightbox2">
+                    <img src="image/corfuTownSunset.jpg" alt="Corfu Photo 2" class="gallery-image corfu">
+                </a>
+            </div>
+            <div class="image-link corfu">
+                <a href="#lightbox3">
+                    <img src="image/corfuArches.jpg" alt="Corfu Photo 3" class="gallery-image corfu">
+                </a>
+            </div>
+            <!-- Add more images as needed -->
+
+            <!-- Lightbox Markup -->
+            <div class="lightbox" id="lightbox1">
+                <a href="#" class="lightbox-close">&times;</a>
+                <img src="image/corfuRuins.jpg" alt="Large Image">
+            </div>
+            <div class="lightbox" id="lightbox2">
+                <a href="#" class="lightbox-close">&times;</a>
+                <img src="image/corfuTownSunset.jpg" alt="Large Image">
+            </div>
+            <div class="lightbox" id="lightbox3">
+                <a href="#" class="lightbox-close">&times;</a>
+                <img src="image/corfuArches.jpg" alt="Large Image">
+            </div>
         </div>
     </main>
-    <footer>
-        <p class="gradient-text" style="color: #00ffff;">&copy; 2024 Eric Adams</p>
+    <footer class="corfu">
+        <p class="gradient-text corfu" style="color: #00ffff;">&copy; 2024 Eric Adams</p>
     </footer>
 </body>
 </html>
