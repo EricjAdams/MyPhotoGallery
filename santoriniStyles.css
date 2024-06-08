@@ -1,4 +1,5 @@
 body.santorini {
+    font-family: 'Caveat', cursive;
     background: url('image/santoriniWindmill.jpg') no-repeat right center fixed;
     background-size: cover;
     color: transparent; /* Set default text color */
