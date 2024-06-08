@@ -2,6 +2,7 @@ body.sorrento {
     font-family: 'Caveat', cursive;
     background: url('image/sorentoPier.jpg') no-repeat right center fixed;
     background-size: cover;
+    background-position: center;
     color: transparent; /* Set default text color */
     display: flex;
     flex-direction: column;
