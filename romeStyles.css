@@ -1,7 +1,7 @@
 body.rome {
-    background: url('image/colosseum.jpg') no-repeat right center fixed;
+    background: url('image/colosseum.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: transparent;
+    color: #fff;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -45,20 +45,24 @@ header.rome {
     border-radius: 4px;
 }
 
-main.rome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
+.text-box {
+    background-color: rgba(169, 187, 198, 0.63);
     padding: 20px;
-    text-align: center;
+    border-radius: 10px;
+    width: 80%; /* Changed from 20% to 80% for better readability on small screens */
+    margin: 20px auto; /* Center horizontally and add margin for spacing */
+    text-align: center; /* centers the text in the text box */
+}
+
+.text-box h2,
+.text-box p {
+    color: #090003; /* Adjusted color of text for h2 and paragraph */
 }
 
 footer.rome {
     text-align: center;
-    margin-top: auto;
-    padding: 20px 0;
     background-color: #3d3b3b;
+    padding: 20px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -70,29 +74,31 @@ footer.rome {
     color: transparent;
 }
 
-.text-box.rome {
-    background-color: rgba(169, 187, 198, 0.63);
-    padding: 20px;
-    border-radius: 10px;
-    width: 20%;
-    margin: -200px auto 0; /* modifies vertical positioning of textbox */
-    text-align: center; /* centers the text in the text box */
-}
-
-.text-box.rome h2,
-.text-box.rome p {
-    color: #090003; /* Adjusted color of text for h2 and paragraph */
-}
-
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    .text-box.rome {
-        width: 80%;
+    header.rome {
+        padding: 10px 0;
     }
     .nav-list {
         flex-direction: column;
     }
     .nav-list li {
         margin: 10px 0;
+    }
+    .text-box {
+        width: 90%; /* Adjust width for better readability */
+    }
+    footer.rome {
+        padding: 10px 0;
+    }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+    .nav-list a {
+        padding: 5px 10px; /* Adjust padding for smaller screen */
+    }
+    .text-box {
+        width: 95%; /* Further adjust width for very small screens */
     }
 }

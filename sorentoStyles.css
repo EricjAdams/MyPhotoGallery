@@ -20,6 +20,12 @@ header.sorrento {
     align-items: center;
 }
 
+header.sorrento h1, header.sorrento h2 {
+    background: linear-gradient(to right, #008000, #ffffff, #ff0000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .nav-list {
     list-style-type: none;
     margin: 0;
@@ -110,10 +116,24 @@ footer.sorrento {
     width: 25%; /* Adjusts width */
     margin: 50px auto; /* Adjusts margin */
     text-align: center; /* Center align text */;
+    color: #fff;
 }
 
 .gradient-text.sorrento {
     background: linear-gradient(to right, #008000, #ffffff, #ff0000);
     -webkit-background-clip: text;
     color: transparent;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .text-box {
+        width: 80%; /* Adjusts width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-box {
+        width: 90%; /* Further adjust width for very small screens */
+    }
 }
