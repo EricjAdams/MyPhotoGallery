@@ -13,16 +13,25 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         /* Add custom styles for the time zone table */
+        #time-zone-wrapper {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            overflow-x: auto; /* Enable horizontal scrolling */
+        }
+
         #time-zone-table {
             border-collapse: collapse;
             width: 100%;
-            margin-top: 20px;
         }
+
         #time-zone-table th, #time-zone-table td {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
         }
+
         #time-zone-table th {
             background-color: #f2f2f2;
         }
@@ -69,39 +78,41 @@
         </div>
 
         <!-- Time Zone Table -->
-        <table id="time-zone-table">
-            <caption>Current Time in Different Locations</caption>
-            <tr>
-                <th>Location</th>
-                <th>Time Zone</th>
-                <th>Current Time</th>
-            </tr>
-            <tr>
-                <td>Athens</td>
-                <td>Eastern European Time (EET)</td>
-                <td>10:00 AM</td> <!-- Placeholder time, replace with actual current time -->
-            </tr>
-            <tr>
-                <td>Rome</td>
-                <td>Central European Time (CET)</td>
-                <td>9:00 AM</td> <!-- Placeholder time, replace with actual current time -->
-            </tr>
-            <tr>
-                <td>Corfu</td>
-                <td>Eastern European Time (EET)</td>
-                <td>10:00 AM</td> <!-- Placeholder time, replace with actual current time -->
-            </tr>
-            <tr>
-                <td>Santorini</td>
-                <td>Eastern European Time (EET)</td>
-                <td>10:00 AM</td> <!-- Placeholder time, replace with actual current time -->
-            </tr>
-            <tr>
-                <td>Sorento</td>
-                <td>Central European Time (CET)</td>
-                <td>9:00 AM</td> <!-- Placeholder time, replace with actual current time -->
-            </tr>
-        </table>
+        <div id="time-zone-wrapper">
+            <table id="time-zone-table">
+                <caption>Current Time in Different Locations</caption>
+                <tr>
+                    <th>Location</th>
+                    <th>Time Zone</th>
+                    <th>Current Time</th>
+                </tr>
+                <tr>
+                    <td>Athens</td>
+                    <td>Eastern European Time (EET)</td>
+                    <td>10:00 AM</td> <!-- Placeholder time, replace with actual current time -->
+                </tr>
+                <tr>
+                    <td>Rome</td>
+                    <td>Central European Time (CET)</td>
+                    <td>9:00 AM</td> <!-- Placeholder time, replace with actual current time -->
+                </tr>
+                <tr>
+                    <td>Corfu</td>
+                    <td>Eastern European Time (EET)</td>
+                    <td>10:00 AM</td> <!-- Placeholder time, replace with actual current time -->
+                </tr>
+                <tr>
+                    <td>Santorini</td>
+                    <td>Eastern European Time (EET)</td>
+                    <td>10:00 AM</td> <!-- Placeholder time, replace with actual current time -->
+                </tr>
+                <tr>
+                    <td>Sorento</td>
+                    <td>Central European Time (CET)</td>
+                    <td>9:00 AM</td> <!-- Placeholder time, replace with actual current time -->
+                </tr>
+            </table>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Eric Adams</p>
