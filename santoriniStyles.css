@@ -28,7 +28,6 @@ header.santorini h1 {
     padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .nav-list li {
@@ -47,17 +46,7 @@ header.santorini h1 {
     background-color: #575757;
     border-radius: 4px;
 }
-/*
-.main.santorini {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    padding: 20px;
-    text-align: center;
-     margin-top: -24vh; 
-}
-*/
+
 footer.santorini {
     text-align: center;
     margin-top: auto;
@@ -75,7 +64,6 @@ footer.santorini {
     width: 25%; /* Adjusted width for better readability */
     margin: 50px auto; /* Center horizontally and add margin for spacing */
     text-align: center; /* Centers the text in the text box */
-    /*color: #fff; /* Set text color */
 }
 
 .text-box h2,
@@ -97,18 +85,5 @@ footer.santorini p {
 @media (max-width: 768px) {
     .text-box {
         width: 90%; /* Adjust width for smaller screens */
-    }
-    .nav-list {
-        flex-direction: column;
-    }
-    .nav-list li {
-        margin: 10px 0;
-    }
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .text-box {
-        width: 80%; /* Adjusts width for smaller screens */
     }
 }

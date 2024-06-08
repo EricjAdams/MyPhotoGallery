@@ -1,16 +1,7 @@
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-/* Sorento-specific styles */
 body.sorrento {
     background: url('image/sorentoPier.jpg') no-repeat right center fixed;
     background-size: cover;
-    color: transparent;
+    color: transparent; /* Set default text color */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -20,12 +11,9 @@ body.sorrento {
 
 header.sorrento {
     background-color: #3d3b3b;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px 0;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 header.sorrento h1, header.sorrento h2 {
@@ -40,6 +28,7 @@ header.sorrento h1, header.sorrento h2 {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav-list li {
@@ -53,11 +42,12 @@ header.sorrento h1, header.sorrento h2 {
     display: block;
 }
 
-.nav-list a:hover {
+.nav-list a:hover,
+.nav-list a.active {
     background-color: #575757;
     border-radius: 4px;
 }
-
+/*
 main.sorrento {
     display: flex;
     justify-content: center;
@@ -65,9 +55,9 @@ main.sorrento {
     flex-grow: 1;
     padding: 20px;
     text-align: center;
-    margin-top: -24vh; /* Adjusts margin for Santorini page */
+    margin-top: -24vh; 
 }
-
+*/
 footer.sorrento {
     text-align: center;
     margin-top: auto;
@@ -76,46 +66,6 @@ footer.sorrento {
     position: fixed;
     bottom: 0;
     width: 100%;
-    border-top: 2px solid #3d3b3b;
-    border-bottom: 2px solid #3d3b3b;
-    color: white; /* Add this line */
-}
-
-.home-button.sorrento {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 5px 10px;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #000;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.home-button.sorrento:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content.sorrento {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    top: 30px;
-    left: 0;
-}
-
-.dropdown-content.sorrento a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content.sorrento a:hover {
-    background-color: #f1f1f1;
 }
 
 .text-box {
@@ -125,24 +75,18 @@ footer.sorrento {
     width: 25%; /* Adjusts width */
     margin: 50px auto; /* Adjusts margin */
     text-align: center; /* Center align text */
-    color: white; /* Add this line */
+   /* color: white; /* Add this line */
 }
 
-.gradient-text.sorrento {
+.gradient-text {
     background: linear-gradient(to right, #008000, #ffffff, #ff0000);
     -webkit-background-clip: text;
     color: transparent;
 }
 
-/* Media queries for smaller screens */
+/* Media query for smaller screens */
 @media (max-width: 768px) {
     .text-box {
         width: 80%; /* Adjusts width for smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .text-box {
-        width: 90%; /* Further adjust width for very small screens */
     }
 }
