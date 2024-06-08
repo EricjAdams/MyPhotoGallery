@@ -1,7 +1,8 @@
+/* Rome-specific styles */
 body.rome {
-    background: url('image/colosseum.jpg') no-repeat center center fixed;
+    background: url('image/colosseum.jpg') no-repeat right center fixed;
     background-size: cover;
-    color: #fff;
+    color: transparent; /* Set default text color */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -11,12 +12,18 @@ body.rome {
 
 header.rome {
     background-color: #3d3b3b;
-    text-align: center;
     padding: 20px 0;
+    text-align: center;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+header.rome h1 {
+    background: linear-gradient(to right, green, white, red); /* Italian flag gradient */
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .nav-list {
@@ -25,7 +32,6 @@ header.rome {
     padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .nav-list li {
@@ -39,66 +45,52 @@ header.rome {
     display: block;
 }
 
-.nav-list a:hover,
-.nav-list a.active {
+.nav-list a:hover {
     background-color: #575757;
     border-radius: 4px;
 }
 
-.text-box {
-    background-color: rgba(169, 187, 198, 0.63);
+main.rome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
     padding: 20px;
-    border-radius: 10px;
-    width: 80%; /* Changed from 20% to 80% for better readability on small screens */
-    margin: 20px auto; /* Center horizontally and add margin for spacing */
-    text-align: center; /* centers the text in the text box */
-}
-
-.text-box h2,
-.text-box p {
-    color: #090003; /* Adjusted color of text for h2 and paragraph */
+    text-align: center;
+    margin-top: -24vh; /* Adjusts margin for Santorini page */
 }
 
 footer.rome {
     text-align: center;
+    margin-top: auto;
     background-color: #3d3b3b;
     padding: 20px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    border-top: 2px solid #3d3b3b;
+    border-bottom: 2px solid #3d3b3b;
 }
 
-.italian-flag-text {
-    background: linear-gradient(to right, #008000, #ffffff, #ff0000);
+.text-box {
+    background: linear-gradient(to right, #171c4354, #979bb549); /* Adjusts gradient */
+    padding: 10px;
+    border-radius: 10px;
+    width: 25%; /* Adjusts width */
+    margin: 50px auto; /* Adjusts margin */
+    text-align: center; /* Center align text */
+    color: #fff; /* Set text color */
+}
+
+.gradient-text {
+    background: linear-gradient(to right, green, white, red);
     -webkit-background-clip: text;
     color: transparent;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    header.rome {
-        padding: 10px 0;
-    }
-    .nav-list {
-        flex-direction: column;
-    }
-    .nav-list li {
-        margin: 10px 0;
-    }
     .text-box {
-        width: 90%; /* Adjust width for better readability */
-    }
-    footer.rome {
-        padding: 10px 0;
-    }
-}
-
-/* Media query for very small screens */
-@media (max-width: 480px) {
-    .nav-list a {
-        padding: 5px 10px; /* Adjust padding for smaller screen */
-    }
-    .text-box {
-        width: 95%; /* Further adjust width for very small screens */
+        width: 80%; /* Adjusts width for smaller screens */
     }
 }

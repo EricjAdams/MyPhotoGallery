@@ -1,3 +1,11 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
 /* Sorento-specific styles */
 body.sorrento {
     background: url('image/sorentoPier.jpg') no-repeat right center fixed;
@@ -70,6 +78,7 @@ footer.sorrento {
     width: 100%;
     border-top: 2px solid #3d3b3b;
     border-bottom: 2px solid #3d3b3b;
+    color: white; /* Add this line */
 }
 
 .home-button.sorrento {
@@ -115,8 +124,8 @@ footer.sorrento {
     border-radius: 10px;
     width: 25%; /* Adjusts width */
     margin: 50px auto; /* Adjusts margin */
-    text-align: center; /* Center align text */;
-    color: #fff;
+    text-align: center; /* Center align text */
+    color: white; /* Add this line */
 }
 
 .gradient-text.sorrento {
