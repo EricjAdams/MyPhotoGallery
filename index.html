@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Uploader</title>
-    <!-- Link to styles.css -->
     <link rel="stylesheet" href="styles.css">
     <!-- Link to the Caveat font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-    <!-- Favicon links -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        /* Add custom styles for the time zone table */
+        #time-zone-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        #time-zone-table th, #time-zone-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        #time-zone-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -55,6 +65,41 @@
                 </div>
             </a>
         </div>
+
+        <!-- Time Zone Table -->
+        <table id="time-zone-table">
+            <caption>Current Time in Different Locations</caption>
+            <tr>
+                <th>Location</th>
+                <th>Time Zone</th>
+                <th>Current Time</th>
+            </tr>
+            <tr>
+                <td>Athens</td>
+                <td>Eastern European Time (EET)</td>
+                <td>10:00 AM</td> <!-- Placeholder time, replace with actual current time -->
+            </tr>
+            <tr>
+                <td>Rome</td>
+                <td>Central European Time (CET)</td>
+                <td>9:00 AM</td> <!-- Placeholder time, replace with actual current time -->
+            </tr>
+            <tr>
+                <td>Corfu</td>
+                <td>Eastern European Time (EET)</td>
+                <td>10:00 AM</td> <!-- Placeholder time, replace with actual current time -->
+            </tr>
+            <tr>
+                <td>Santorini</td>
+                <td>Eastern European Time (EET)</td>
+                <td>10:00 AM</td> <!-- Placeholder time, replace with actual current time -->
+            </tr>
+            <tr>
+                <td>Sorento</td>
+                <td>Central European Time (CET)</td>
+                <td>9:00 AM</td> <!-- Placeholder time, replace with actual current time -->
+            </tr>
+        </table>
     </main>
     <footer>
         <p>&copy; 2024 Eric Adams</p>
