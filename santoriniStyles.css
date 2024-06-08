@@ -106,12 +106,9 @@ footer.santorini p {
     }
 }
 
-/* Media query for very small screens */
-@media (max-width: 480px) {
-    .nav-list a {
-        padding: 5px 10px; /* Adjust padding for smaller screens */
-    }
+/* Media query for smaller screens */
+@media (max-width: 768px) {
     .text-box {
-        width: 95%; /* Further adjust width for very small screens */
+        width: 80%; /* Adjusts width for smaller screens */
     }
 }
