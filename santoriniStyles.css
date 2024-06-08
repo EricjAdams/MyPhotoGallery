@@ -1,18 +1,19 @@
 body.santorini {
     background: url('image/santoriniWindmill.jpg') no-repeat right center fixed;
     background-size: cover;
-    color: #fff; /* Set default text color */
+    color: transparent; /* Set default text color */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    padding-bottom: 150px;  /* Adds padding to the bottom of the body */
+    padding-bottom: 150px; /* Adds padding to the bottom of the body */
 }
 
 header.santorini {
     background-color: #3d3b3b;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px 0;
+    position: relative;
 }
 
 header.santorini h1 {
@@ -27,6 +28,7 @@ header.santorini h1 {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .nav-list li {
@@ -37,13 +39,15 @@ header.santorini h1 {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
+    display: block;
 }
 
-.nav-list a:hover {
+.nav-list a:hover,
+.nav-list a.active {
     background-color: #575757;
     border-radius: 4px;
 }
-
+/*
 .main.santorini {
     display: flex;
     justify-content: center;
@@ -51,10 +55,12 @@ header.santorini h1 {
     flex-grow: 1;
     padding: 20px;
     text-align: center;
+     margin-top: -24vh; 
 }
-
+*/
 footer.santorini {
     text-align: center;
+    margin-top: auto;
     background-color: #3d3b3b;
     padding: 20px 0;
     position: fixed;
@@ -66,9 +72,10 @@ footer.santorini {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     padding: 20px;
     border-radius: 10px;
-    width: 80%; /* Adjusted width for better readability */
+    width: 25%; /* Adjusted width for better readability */
     margin: 50px auto; /* Center horizontally and add margin for spacing */
     text-align: center; /* Centers the text in the text box */
+    /*color: #fff; /* Set text color */
 }
 
 .text-box h2,
