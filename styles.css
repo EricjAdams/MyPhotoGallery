@@ -112,7 +112,9 @@ footer p {
     color: black; /* Change text color to black */
 }
 
-.time-table th,
-.time-table td {
-    font-weight: bold;
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .text-box {
+        width: 80%; 
+    }
 }

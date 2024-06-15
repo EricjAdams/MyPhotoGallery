@@ -2,18 +2,12 @@ body.corfu {
     font-family: 'Caveat', cursive;
     background: url('image/corfuTown.jpg') no-repeat right center fixed;
     background-size: cover;
-    color: transparent;
+    color: #fff;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    padding-bottom: 150px; /* Adds padding to the bottom of the body */
-}
-
-.gradient-text.corfu {
-    background: linear-gradient(to right, blue, rgb(29, 12, 73));
-    -webkit-background-clip: text;
-    color: transparent;
+    padding-bottom: 150px;
 }
 
 header.corfu {
@@ -21,6 +15,19 @@ header.corfu {
     text-align: center;
     padding: 20px 0;
     position: relative;
+}
+
+header.corfu h1 {
+    background: linear-gradient(to right, #0d5eaf, #ffffff, #0c5c15); /* Greek flag gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header.corfu h1 span {
+    display: inline-block;
+    background: linear-gradient(to right, #0d5eaf, #ffffff, #0c5c15); /* Greek flag gradient */
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 footer.corfu {
@@ -60,17 +67,25 @@ footer.corfu {
 }
 
 .text-box.corfu {
-    background-color: rgba(203, 225, 238, 0.7);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     padding: 20px;
     border-radius: 10px;
-    width: 30%;
-    margin: 20px auto 20px; /* Adds margin to the bottom of the text box */
-    text-align: center; /* centers the text in the text box */
+    width: 25%; /* Adjusted width for better readability */
+    margin: 50px auto; /* Center horizontally and add margin for spacing */
+    text-align: center; /* Centers the text in the text box */
+    color: #fff; /* Text color */
 }
 
-.text-box.corfu h2,
+.text-box.corfu h2 {
+    background: linear-gradient(to right, #0d5eaf, #ffffff, #0c5c15); /* Greek flag gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .text-box.corfu p {
-    color: #090003; /* Adjusts color of text for h2 and paragraph */
+    background: linear-gradient(to right, #0d5eaf8e, #ffffff6f); /* Gradient matching Greek flag */
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .spacer {
@@ -80,24 +95,24 @@ footer.corfu {
 .image-link.corfu {
     display: flex;
     justify-content: center;
-    text-align: center; /* Centers the images */
-    margin: 0 auto 20px; /* Adds margin between images */
-    cursor: pointer; /* Adds cursor pointer */
+    text-align: center;
+    margin: 0 auto 20px;
+    cursor: pointer;
     position: relative;
 }
 
 .gallery-image.corfu {
-    width: 100px; /* Adjusts size as needed */
+    width: 250px;
     height: auto;
     border-radius: 5px;
     object-fit: cover;
     border: 10px solid #00f;
-    border-image: linear-gradient(to right, #00f, #ffff); /* Gradient border */
-    border-image-slice: 1; /* Ensures the entire border is a gradient */
+    border-image: linear-gradient(to right, #00f, #ffff);
+    border-image-slice: 1;
 }
 
 .image-link:hover .gallery-image.corfu {
-    transform: scale(1.1); /* Zoom effect on hover */
+    transform: scale(1.1);
 }
 
 .lightbox {
@@ -119,7 +134,7 @@ footer.corfu {
 }
 
 .lightbox:target {
-    display: flex; /* Show lightbox when URL has a target */
+    display: flex;
 }
 
 .lightbox-close {
@@ -133,4 +148,11 @@ footer.corfu {
 
 .lightbox-close:hover {
     color: #ccc;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .text-box.corfu {
+        width: 80%;
+    }
 }

@@ -66,16 +66,22 @@ footer.rome {
 }
 
 .text-box {
-    background: linear-gradient(to right, #dcdee972, #979bb549); /* Adjusts gradient */
-    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
     border-radius: 10px;
-    width: 25%; /* Adjusts width */
-    margin: 50px auto; /* Adjusts margin */
-    text-align: center; /* Center align text */
+    width: 25%; /* Adjusted width for better readability */
+    margin: 50px auto; /* Center horizontally and add margin for spacing */
+    text-align: center; /* Centers the text in the text box */
+    color: #fff; /* Text color */
 }
 
-.gradient-text {
-    background: linear-gradient(to right, green, white, red);
+.text-box h2,
+.text-box p {
+    color: #fff; /* Adjusted color of text for h2 and paragraph */
+}
+
+.text-box .gradient-text {
+    background: linear-gradient(to right, green, white, red); /* Italian flag gradient */
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -99,7 +105,7 @@ footer.rome {
     border-radius: 5px; /* Adds rounded corners to images */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to images */
     border: 10px solid rgb(11, 172, 22); /* Solid border color */
-    border-image: linear-gradient(to right,#008000,  #e4e4ec, hsl(0, 96%, 45%)); /* Gradient border */
+    border-image: linear-gradient(to right, #008000, #e4e4ec, hsl(0, 96%, 45%)); /* Gradient border */
     border-image-slice: 1; /* Ensures the entire border is a gradient */
 }
 

@@ -18,7 +18,7 @@ header.santorini {
 }
 
 header.santorini h1 {
-    background: linear-gradient(to right, #0000ff, #ffffff, #0000ff); /* Gradient effect */
+    background: linear-gradient(to right, #0d5eaf, #ffffff, #0d5eaf); /* Gradient effect matching Greek flag */
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -77,13 +77,13 @@ footer.santorini {
 
 .text-box h2,
 .text-box p {
-    color: #3ae16a; /* Adjusted color of text for h2 and paragraph */
+    color: #fff; /* Adjusted color of text for h2 and paragraph */
 }
 
-.gradient-text {
-    background: linear-gradient(to right, #0000ff, #ffffff, #0000ff);
+.text-box .gradient-text {
+    background: linear-gradient(to right, #0d5eaf, #ffffff, #0d5eaf); /* Gradient matching Greek flag */
     -webkit-background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Photo gallery styles */
@@ -153,11 +153,6 @@ footer.santorini {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .text-box {
-        width: 80%; /* Adjusts width for smaller screens */
-    }
-
-    .photo-gallery .image-link {
-        width: calc(100% - 20px); /* Full width for each image container */
-        max-width: none; /* Removes max-width */
+        width: 80%; 
     }
 }

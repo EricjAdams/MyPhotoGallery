@@ -2,7 +2,7 @@ body.athens {
     font-family: 'Caveat', cursive;
     background: url('image/acropolis.jpg') no-repeat right center fixed;
     background-size: cover;
-    color: transparent;
+    color: #fff; /* Set text color to white */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -11,7 +11,7 @@ body.athens {
 }
 
 .greek-flag-text {
-    background: linear-gradient(to right, #0000ff, #ffffff, #0000ff);
+    background: linear-gradient(to right, #0d5eaf, #ffffff, #0c5c15); /* Greek flag gradient */
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -21,6 +21,12 @@ header.athens {
     text-align: center;
     padding: 20px 0;
     position: relative;
+}
+
+header.athens h1 {
+    background: linear-gradient(to right, #0d5eaf, #ffffff, #0c5c15); /* Greek flag gradient */
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 footer {
@@ -60,17 +66,23 @@ footer {
 }
 
 .text-box {
-    background-color: rgba(128, 128, 128, 0.7);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     padding: 20px;
     border-radius: 10px;
-    width: 30%;
-    margin: 20px auto 20px; /* Adds margin to the bottom of the text box */
-    text-align: center; /* centers the text in the text box*/
+    width: 25%; /* Adjusted width for better readability */
+    margin: 50px auto; /* Center horizontally and add margin for spacing */
+    text-align: center; /* Centers the text in the text box */
+    color: #fff; /* Text color */
 }
 
-.text-box h2,
+.text-box h2 {
+    background: linear-gradient(to right, #0d5eaf, #ffffff, #0c5c15); /* Gradient matching Greek flag */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .text-box p {
-    color: #3ae16a; /* Adjusted color of text for h2 and paragraph */
+    color: #fff; /* Adjusted color of text for paragraph */
 }
 
 .spacer {
@@ -87,10 +99,10 @@ footer {
 }
 
 .gallery-image.athens {
-    width: 100px; /* Adjusts size as needed */
-    height: auto;
+    width: 200px; /* Increase width to make images larger */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
-    object-fit: cover;
+    object-fit: cover; /* Ensures the image covers the entire container */
     border: 10px solid #00f;
     border-image: linear-gradient(to right, #00f, #ffff); /* Gradient border */
     border-image-slice: 1; /* Ensures the entire border is a gradient */
@@ -133,4 +145,11 @@ footer {
 
 .lightbox-close:hover {
     color: #ccc;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .text-box {
+        width: 80%; /* Adjusts width for smaller screens */
+    }
 }
