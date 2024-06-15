@@ -12,7 +12,7 @@ body.sorrento {
     padding-bottom: 150px;
 }
 
-header.sorrento {
+header.sorrento { 
     background-color: #3d3b3b;
     text-align: center;
     padding: 20px 0;
@@ -105,7 +105,7 @@ footer.sorrento {
     max-width: 300px;
     overflow: hidden;
     border: 10px solid #00f;
-    border-image: linear-gradient(to right, #008000, #ffffff, #ff0000);
+    border-image: linear-gradient(to right, #008000, #ffffff, #ff0000); /*adds gradient*/
     border-image-slice: 1;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

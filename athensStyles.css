@@ -76,7 +76,7 @@ footer {
 }
 
 .text-box h2 {
-    background: linear-gradient(to right, #0d5eaf, #ffffff, #0c5c15); /* Gradient matching Greek flag */
+    background: linear-gradient(to right, #0d5eaf, #ffffff, #0d5eaf; /* Gradient matching Greek flag */
     -webkit-background-clip: text;
     color: transparent;
 }
