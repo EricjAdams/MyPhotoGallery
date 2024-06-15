@@ -1,6 +1,6 @@
-body.athens {
+body.corfu {
     font-family: 'Caveat', cursive;
-    background: url('image/athens.jpg') no-repeat right center fixed;
+    background: url('image/corfuTown.jpg') no-repeat right center fixed;
     background-size: cover;
     color: #fff;
     display: flex;
@@ -10,27 +10,27 @@ body.athens {
     padding-bottom: 150px;
 }
 
-header.athens {
+header.corfu {
     background-color: #3d3b3b;
     text-align: center;
     padding: 20px 0;
     position: relative;
 }
 
-header.athens h1 {
+header.corfu h1 {
     background: linear-gradient(to right, #0d5eaf, #ffffff, #0c5c15); /* Greek flag gradient */
     -webkit-background-clip: text;
     color: transparent;
 }
 
-header.athens h1 span {
+header.corfu h1 span {
     display: inline-block;
     background: linear-gradient(to right, #0d5eaf, #ffffff, #0c5c15); /* Greek flag gradient */
     -webkit-background-clip: text;
     color: transparent;
 }
 
-footer.athens {
+footer.corfu {
     text-align: center;
     margin-top: auto;
     background-color: #3d3b3b;
@@ -66,7 +66,7 @@ footer.athens {
     border-radius: 4px;
 }
 
-.text-box.athens {
+.text-box.corfu {
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     padding: 20px;
     border-radius: 10px;
@@ -76,13 +76,13 @@ footer.athens {
     color: #fff; /* Text color */
 }
 
-.text-box.athens h2 {
+.text-box.corfu h2 {
     background: linear-gradient(to right, #0d5eaf, #ffffff, #0c5c15); /* Greek flag gradient */
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.text-box.athens p {
+.text-box.corfu p {
     background: linear-gradient(to right, #0d5eaf8e, #ffffff6f); /* Gradient matching Greek flag */
     -webkit-background-clip: text;
     color: transparent;
@@ -92,7 +92,7 @@ footer.athens {
     height: 20px; /* Adds height to create space between textbox and photos */
 }
 
-.image-link.athens {
+.image-link.corfu {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -101,7 +101,7 @@ footer.athens {
     position: relative;
 }
 
-.gallery-image.athens {
+.gallery-image.corfu {
     width: 250px;
     height: auto;
     border-radius: 5px;
@@ -111,7 +111,7 @@ footer.athens {
     border-image-slice: 1;
 }
 
-.image-link:hover .gallery-image.athens {
+.image-link:hover .gallery-image.corfu {
     transform: scale(1.1);
 }
 
@@ -152,7 +152,7 @@ footer.athens {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    .text-box.athens {
+    .text-box.corfu {
         width: 80%;
     }
 }
