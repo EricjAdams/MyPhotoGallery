@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorrento Gallery</title>
+    <link rel="stylesheet" href="sorentoStyles.css"> <!-- page specific CSS file -->
+    <!-- Link to the Caveat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+</head>
+<body class="sorrento">
+    <!-- Header -->
+    <header class="sorrento">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Athens.html">Athens</a></li>
+                <li><a href="Corfu.html">Corfu</a></li>
+                <li><a href="Rome.html">Rome</a></li>
+                <li><a href="Santorini.html">Santorini</a></li>
+                <li><a href="Sorrento.html" class="active">Sorrento</a></li>
+            </ul>
+        </nav>
+        <h1 class="gradient-text">Sorrento Photo Gallery</h1>
+    </header>
+    <!-- Main Content -->
+    <main class="sorrento">
+        <div class="text-box">
+            <h2 class="gradient-text">Sorrento</h2>
+            <p class="gradient-text">Welcome to the photo gallery of Sorrento.</p>
+            <!-- External link to weather website -->
+            <p><a href="https://weather.com/weather/today/l/40.63,14.38?par=google" target="_blank" class="weather-link">Check Current Weather in Sorrento</a></p>
+            <!-- Link to sea temperature website -->
+            <p><a href="https://www.seatemperature.org/europe/italy/sorrento.htm">Link to Sea Temperature</a></p>
+        </div>
+        <div class="photo-gallery">
+            <div class="image-link">
+                <a href="#lightbox1">
+                    <img src="image/SorentoBikePlanter.jpg" alt="Sorrento Photo 1" class="gallery-image">
+                </a>
+            </div>
+            <div class="image-link">
+                <a href="#lightbox2">
+                    <img src="image/shopsSorrento.jpg" alt="Sorrento Photo 2" class="gallery-image">
+                </a>
+            </div>
+            <div class="image-link">
+                <a href="#lightbox3">
+                    <img src="image/chimneysSorento.jpg" alt="Sorrento Photo 3" class="gallery-image">
+                </a>
+            </div>
+            <!-- Lightbox Markup -->
+            <div class="lightbox" id="lightbox1">
+                <a href="#" class="lightbox-close">&times;</a>
+                <img src="image/SorentoBikePlanter.jpg" alt="Large Image">
+            </div>
+            <div class="lightbox" id="lightbox2">
+                <a href="#" class="lightbox-close">&times;</a>
+                <img src="image/shopsSorrento.jpg" alt="Large Image">
+            </div>
+            <div class="lightbox" id="lightbox3">
+                <a href="#" class="lightbox-close">&times;</a>
+                <img src="image/chimneysSorento.jpg" alt="Large Image">
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="sorrento">
+        <p class="gradient-text">&copy; 2024 Eric Adams</p>
+    </footer>    
+</body>
+</html>

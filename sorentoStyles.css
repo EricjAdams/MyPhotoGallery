@@ -3,9 +3,10 @@ body.sorrento {
     background: url('image/sorentoPier.jpg') no-repeat right center fixed;
     background-size: cover;
     background-position: center;
-    color: transparent; /* Set default text color */
+    color: #fff; /* Ensure text color is visible against the background */
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Vertically centers the content */
     min-height: 100vh;
     margin: 0;
     padding-bottom: 150px; /* Adds padding to the bottom of the body */
@@ -49,17 +50,16 @@ header.sorrento h1, header.sorrento h2 {
     background-color: #575757;
     border-radius: 4px;
 }
-/*
+
 main.sorrento {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-grow: 1;
     padding: 20px;
     text-align: center;
-    margin-top: -24vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers children horizontally */
 }
-*/
+
 footer.sorrento {
     text-align: center;
     margin-top: auto;
@@ -71,13 +71,17 @@ footer.sorrento {
 }
 
 .text-box {
-    background: linear-gradient(to right, #171c4354, #979bb549 );/* Adjusts gradient */
-    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
     border-radius: 10px;
     width: 25%; /* Adjusts width */
-    margin: 50px auto; /* Adjusts margin */
+    margin: 50px auto; /* Center aligns and adds margin for spacing */
     text-align: center; /* Center align text */
-   /* color: white; /* Add this line */
+}
+
+.text-box h2,
+.text-box p {
+    color: #3ae16a; /* Adjusted color of text for h2 and paragraph */
 }
 
 .gradient-text {
@@ -86,9 +90,83 @@ footer.sorrento {
     color: transparent;
 }
 
+/* Photo gallery styles */
+.photo-gallery {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    justify-content: center;
+    gap: 20px;
+    align-items: center; /* Centers items horizontally */
+}
+
+.photo-gallery .image-link {
+    width: 50%; /* Adjust width for stacked images */
+    max-width: 300px; /* Maximum width for responsiveness */
+    margin: 10px;
+    overflow: hidden;
+    border: 10px solid #00f; /* Solid border color */
+    border-image: linear-gradient(to right,#008000, #ffffff, #ff0000); /* Gradient border */
+    border-image-slice: 1; /* Ensures the entire border is a gradient */
+    text-align: center; /* Center aligns images horizontally */
+}
+
+.photo-gallery .gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adds rounded corners to images */
+    transition: transform 0.3s ease-in-out; /* Smooth scale transition */
+}
+
+.photo-gallery .image-link:hover .gallery-image {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.lightbox:target {
+    display: flex;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .text-box {
         width: 80%; /* Adjusts width for smaller screens */
+    }
+
+    .photo-gallery .image-link {
+        width: calc(50% - 20px); /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-gallery .image-link {
+        width: calc(100% - 20px); /* Adjust width for even smaller screens */
     }
 }

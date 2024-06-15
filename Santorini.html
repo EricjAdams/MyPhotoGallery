@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santorini Gallery</title>
     <link rel="stylesheet" href="santoriniStyles.css"> <!-- page specific CSS file -->
-       <!-- Link to the Caveat font -->
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-         <!--Favicon-->
+    <!-- Link to the Caveat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon_io/favicon-16x16.png">
@@ -25,21 +25,54 @@
                 <li><a href="Corfu.html">Corfu</a></li>
                 <li><a href="Rome.html">Rome</a></li>
                 <li><a href="Santorini.html" class="active">Santorini</a></li>
-                <li><a href="Sorento.html">Sorento</a></li>
+                <li><a href="Sorrento.html">Sorrento</a></li> <!-- Corrected spelling from Sorento to Sorrento -->
             </ul>
         </nav>
         <h1 class="gradient-text">Santorini Photo Gallery</h1>
     </header>
+    <!-- Main Content -->
     <main class="santorini">
         <div class="text-box">
-            <h2>Santorini</h2>
-            <p>Welcome to my photo gallery of Santorini.</p>
+            <h2 class="gradient-text">Santorini</h2>
+            <p class="gradient-text">Welcome to my photo gallery of Santorini.</p>
             <!-- External link to weather website -->
             <p><a href="https://weather.com/weather/today/l/36.39,25.46?par=google" target="_blank" style="color: hsl(257, 73%, 22%); text-decoration: underline;">Check Current Weather in Santorini</a></p>
-            <!--Link to sea temperature website-->
+            <!-- Link to sea temperature website -->
             <p><a href="https://www.seatemperature.org/europe/greece/fira.htm">Link to Sea Temperature</a></p>
         </div>
+        <!-- Photo Gallery -->
+        <div class="photo-gallery">
+            <div class="image-link">
+                <a href="#lightbox1">
+                    <img src="image/santoriniClifHouse.jpg" alt="Santorini Photo 1" class="gallery-image">
+                </a>
+            </div>
+            <div class="image-link">
+                <a href="#lightbox2">
+                    <img src="image/santoriniStairs.jpg" alt="Santorini Photo 2" class="gallery-image">
+                </a>
+            </div>
+            <div class="image-link">
+                <a href="#lightbox3">
+                    <img src="image/santoriniRooftops.jpg" alt="Santorini Photo 3" class="gallery-image">
+                </a>
+            </div>
+            <!-- Lightbox Markup -->
+            <div class="lightbox" id="lightbox1">
+                <a href="#" class="lightbox-close">&times;</a>
+                <img src="image/santoriniClifHouse.jpg" alt="Large Santorini Image">
+            </div>
+            <div class="lightbox" id="lightbox2">
+                <a href="#" class="lightbox-close">&times;</a>
+                <img src="image/santoriniStairs.jpg" alt="Large Santorini Image">
+            </div>
+            <div class="lightbox" id="lightbox3">
+                <a href="#" class="lightbox-close">&times;</a>
+                <img src="image/santoriniRooftops.jpg" alt="Large Santorini Image">
+            </div>
+        </div>
     </main>
+    <!-- Footer -->
     <footer class="santorini">
         <p>&copy; 2024 Eric Adams</p>
     </footer>

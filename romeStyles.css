@@ -2,7 +2,7 @@ body.rome {
     font-family: 'Caveat', cursive;
     background: url('image/colosseum.jpg') no-repeat right center fixed;
     background-size: cover;
-    color: transparent; /* Set default text color */
+    color: #fff; /* Ensure text color is visible against the background */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -48,17 +48,13 @@ header.rome h1 {
     background-color: #575757;
     border-radius: 4px;
 }
-/*
+
 main.rome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-grow: 1;
     padding: 20px;
     text-align: center;
-    margin-top: -24vh; 
 }
-*/
+
 footer.rome {
     text-align: center;
     margin-top: auto;
@@ -70,19 +66,77 @@ footer.rome {
 }
 
 .text-box {
-    background: linear-gradient(to right, #171c4354, #979bb549); /* Adjusts gradient */
+    background: linear-gradient(to right, #dcdee972, #979bb549); /* Adjusts gradient */
     padding: 10px;
     border-radius: 10px;
     width: 25%; /* Adjusts width */
     margin: 50px auto; /* Adjusts margin */
     text-align: center; /* Center align text */
-    /* color: #fff; /* Set text color */
 }
 
 .gradient-text {
     background: linear-gradient(to right, green, white, red);
     -webkit-background-clip: text;
     color: transparent;
+}
+
+/* Photo gallery styles */
+.photo-gallery {
+    display: flex;
+    flex-direction: column; /* Stacks images vertically */
+    align-items: center;
+    gap: 20px; /* Space between images */
+}
+
+.photo-gallery .image-link {
+    width: 100%; /* Ensures each image container takes full width */
+    max-width: 300px; /* Max width of each image container */
+}
+
+.photo-gallery .gallery-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Adds rounded corners to images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to images */
+    border: 10px solid rgb(11, 172, 22); /* Solid border color */
+    border-image: linear-gradient(to right,#008000,  #e4e4ec, hsl(0, 96%, 45%)); /* Gradient border */
+    border-image-slice: 1; /* Ensures the entire border is a gradient */
+}
+
+.image-link:hover .gallery-image {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox:target {
+    display: flex;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
 }
 
 /* Media query for smaller screens */
